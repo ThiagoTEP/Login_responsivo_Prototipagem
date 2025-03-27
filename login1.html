@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thiago de Paula">
+    <meta name="description" content="tela de login">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/login.css">
+    <link rel="stylesheet" href="estilos/login-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <!-- aqui vai as imagens no CSS -->
+            </div>
+            <div id="formulario">
+                <h2>Login</h2>
+                <p>Seja bem-vinda(o) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on"> 
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="imail" autocomplete="email" placeholder="Digite email@gmail.com" required maxlength="30">
+                        <label for="imail">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined" id="">vpn_key</span>
+                        <input type="password" name="Senha" id="isenha" autocomplete="current-password" placeholder="Digite a senha" required minlength="8" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="#" class="botao">Esqueci a senha<span class="material-symbols-outlined">mail</span></a>
+                </form>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>

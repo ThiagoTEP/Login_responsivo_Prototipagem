@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root{
+    --lilas: #5f2c82;
+    --verde: #49a09d;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: var(--lilas);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 510px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.658);
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
+}
+
+section#login > div#imagem{
+    display: block;
+    background: var(--lilas) url('../Imagens/pexels-bart-ros-10915473.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+div#formulario > h2{
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+div#formulario > p{
+    font-size: 0.8em;
+}
+.campo{
+    font-size: 0.8em;
+    background-color: var(--verde);
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 7px 0px;
+}
+div.campo > span{
+    color: white;
+    transform: translate(0, 25%);
+    padding-left: 5px;
+}
+div.campo > input{
+    width: 80%;
+    /* width: calc(100%-20px);
+    html faz calculos */
+    height: 100%;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+}
+
+div.campo > input:focus-within::placeholder{
+    background-color:  #54b9b6;
+    color: #54b9b6;
+    
+}
+::placeholder{
+    color: white;
+    text-align: left;
+}
+
+.campo > label{
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+form > input[type=submit]:hover{
+    background-color: #326d6b;
+}
+
+form > a.botao{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    border-radius: 5px;
+    color: white;
+    margin-top: 7px;
+    padding-top: 2px;
+    
+}
+
+form > a.botao:hover{
+    background-color: #326d6b;
+}
+
+form > a > span{
+    transform: translate(0, 25%);
+}
